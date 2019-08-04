@@ -15,6 +15,7 @@ img {
 .title {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
+	position: relative;
 }
 
 .sub-title {
@@ -87,4 +88,97 @@ img {
 	margin-right: 2.5rem;
 	color: #ffddfc;
 	text-decoration: none;
+}
+
+#page-summary {
+	padding: 2rem 0 10rem;
+}
+
+#page-summary .title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+	margin-bottom: 4rem;
+}
+
+#page-summary .item {
+	text-align: center;
+	padding: 0 1.5rem;
+}
+
+.title::after {
+	position: absolute;
+	content: '';
+	top: 100%;
+}
+
+#page-summary .title::after {
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4rem;
+	height: 2px;
+	background-image: linear-gradient(to right, #6455e8, #8d4add);
+}
+
+#page-summary .item img {
+	max-width: 10rem;
+	margin-bottom: 2rem;
+}
+
+#page-summary .item figcaption .title {
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+
+#page-summary .item figcaption .title::after {
+	display: none;
+}
+
+#page-summary .item figcaption p {
+	font-size: 1.5rem;
+	color: #989696;
+}
+
+#page-featured .row {
+	margin: 0;
+}
+
+#page-featured .row [class*="col-"] {
+	padding: 0;
+}
+
+#page-featured .item img {
+	max-width: 70%;
+}
+
+#page-featured .item {
+	height: 100%;
+	padding: 5rem 8rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1.5rem;
+}
+
+#page-featured .item .content {
+	width: 100%;
+	color: #989696;
+}
+
+#page-featured .item .title {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	margin-bottom: 4rem;
+	padding-bottom: 2rem;
+	color: #000;
+}
+
+#page-featured .item .title::after {
+	left: 0;
+	width: 4rem;
+	height: 2px;
+	background-image: linear-gradient(to right, #6455e8, #8d4add);
 }
