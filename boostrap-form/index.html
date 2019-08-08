@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<form action="">
+					<h2>Register</h2>
+					<div class="form-group">
+						<div class="form-row">
+							<div class="col">
+								<label for="">Name</label>
+								<input type="text" class="form-control" placeholder="Your name" required="true" name="">
+							</div>
+							<div class="col">
+								<label for="">First name</label>
+								<input type="text" class="form-control" placeholder="Your first name" required="true" name="">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="">Your email</label>
+						<input type="email" class="form-control" placeholder="Your email" required="true" name="">
+					</div>
+					<div class="form-group">
+						<label for="">Your password</label>
+						<input type="password" class="form-control" placeholder="Your password" required="true" name="">
+					</div>
+					<div class="form-group">
+						<label for="">Place</label>
+						<select class="form-control" name="" id="">
+							<option value="" selected="">Ha Noi</option>
+							<option value="">TPHCM</option>
+							<option value="">Others...</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="">Gender</label>
+						<div class="row" data-toggle="buttons">
+							<div class="col">
+								<label class="btn btn-outline-secondary" for="">Male
+								<input type="radio" name="gender" value="Male">
+							</label>
+							</div>
+							<div class="col">
+								<label class="btn btn-outline-secondary" for="">Female
+								<input type="radio" name="gender" value="Female">
+							</label>
+						</div>
+					</div>
+					</div>
+					<div class="form-group">
+						<input type="checkbox">
+						<label for="">I agree</label>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-success" type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
